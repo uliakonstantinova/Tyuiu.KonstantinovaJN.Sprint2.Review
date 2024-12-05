@@ -6,18 +6,36 @@ namespace Tyuiu.KonstantinovaJN.Sprint2.TaskReview.V10.Lib
     {
         public bool CheckDotInShadedArea(double x, double y)
         {
-            if (x >= 0 && y <= -x && y >= (x * x - 2))
+            bool res;
+            if (x > 0)
             {
-                return true;
+                if ((x * x - y <= 2) && (y - x <= 0) && (y + x >= 0))
+                { 
+                    res = true; 
+                }
+
+                else 
+                { 
+                    res = false; 
+                }
+
             }
-            if (x <= 0 && y <= x && y >= (x * x - 2))
-            {
-                return true;
-            }
+
             else
             {
-                return false;
+                if ((x * x - y <= 2) && (y - x >= 0) && (y + x <= 0))
+                { 
+                    res = true; 
+                }
+
+                else 
+                { 
+                    res = false; 
+                }
+
             }
+            return res;
+
         }
     }
 }

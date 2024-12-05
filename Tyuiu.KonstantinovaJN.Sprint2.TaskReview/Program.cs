@@ -1,6 +1,6 @@
 ﻿using Tyuiu.KonstantinovaJN.Sprint2.TaskReview.V10.Lib;
 
-namespace Tyuiu.KonstantinovaJN.Sprint2.TaskReview.V10
+namespace Tyuiu.KonstantinovaJN.Sprint2.TaskReview
 {
     class Program
     {
@@ -23,9 +23,9 @@ namespace Tyuiu.KonstantinovaJN.Sprint2.TaskReview.V10
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine(" Введите значение переменной X:");
+            Console.WriteLine("Введите значение переменной X: ");
             double x = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine(" Введите значение переменной Y:");
+            Console.WriteLine("Введите значение переменной Y: ");
             double y = Convert.ToDouble(Console.ReadLine());
 
             DataService ds = new DataService();
